@@ -1,4 +1,4 @@
-def check_brackets():
+def check_brackets() -> str:
     brackets = {'(': ')', '{': '}', '[': ']'}
     open_brackets_stack = []
 
@@ -19,11 +19,12 @@ def check_brackets():
                 return "False"
 
             last_open_bracket = open_brackets_stack.pop()
-            
+
             if c != brackets[last_open_bracket]:
                 return "False"
-    
+
     return "True"
+
 
 if __name__ == '__main__':
     print(check_brackets())
