@@ -1,9 +1,9 @@
-def count_triplets(arr: list, a: int, b: int, c: int) -> int:
+def count_triplets(_arr: list, _a: int, _b: int, _c: int) -> int:
     from itertools import combinations
 
     counter = 0
-    for i, j, k in combinations(arr,3):
-        if abs(i-j) <= a and abs(j-k) <= b and abs(i-k) <= c:
+    for i, j, k in combinations(_arr, 3):
+        if abs(i - j) <= _a and abs(j - k) <= _b and abs(i - k) <= _c:
             counter += 1
     return counter
 
