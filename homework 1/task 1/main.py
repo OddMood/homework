@@ -1,4 +1,4 @@
-def check_brackets() -> str:
+def check_brackets(_text: str) -> str:
     brackets = {'(': ')', '{': '}', '[': ']'}
     open_brackets_stack = []
 
@@ -8,9 +8,7 @@ def check_brackets() -> str:
     def is_close_bracket(_c: str):
         return c in brackets.values()
 
-    text = input()
-
-    for c in text:
+    for c in _text:
         if is_open_bracket(c):
             open_brackets_stack.append(c)
 
@@ -27,4 +25,5 @@ def check_brackets() -> str:
 
 
 if __name__ == '__main__':
-    print(check_brackets())
+    text = input()
+    print(check_brackets(text))
