@@ -2,10 +2,10 @@ def check_brackets() -> str:
     brackets = {'(': ')', '{': '}', '[': ']'}
     open_brackets_stack = []
 
-    def is_open_bracket(c):
+    def is_open_bracket(_c: str):
         return c in brackets.keys()
 
-    def is_close_bracket(c):
+    def is_close_bracket(_c: str):
         return c in brackets.values()
 
     text = input()
