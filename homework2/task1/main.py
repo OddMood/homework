@@ -52,5 +52,3 @@ if __name__ == "__main__":
     a.add_num(4)
     print(a)
     print(a.find_median())
-
-import "task 2"/MyTimer
