@@ -2,7 +2,7 @@ class MedianFinder:
     def __init__(self):
         self.list = []
 
-    def add_num(self, number: int):
+    def add_num(self, number: int) -> None:
         index = 0
         for index, elem in enumerate(self.list):
             if elem >= number:
